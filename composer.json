@@ -1,0 +1,23 @@
+{
+  "name": "cypress78/graph-processing",
+  "description": "description_text",
+  "keywords": ["graph", "Dijkstra", "shortest path"],
+  "homepage": "https://github.com/cypress78/graph-processing",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nikolay Gondin",
+      "email": "gondin@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.5"
+  },
+  "autoload": {
+    "psr-4": {"GraphProcessing\\": "src/GraphProcessing"}
+  }
+}
