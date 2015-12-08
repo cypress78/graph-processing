@@ -1,6 +1,6 @@
 <?php
 
-namespace GraphProcessing\Strategy;
+namespace GraphProcessing\Strategy\Dijkstra;
 
 class PriorityQueue extends \SplPriorityQueue
 {

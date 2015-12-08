@@ -25,9 +25,9 @@ class Graph
     public function setByEdges(array $edges)
     {
         foreach ($edges as $edge) {
-            $this->nodes[$edge[0]] = [$edge[1] => $edge[2]];
+            $this->nodes[$edge[0]][$edge[1]] = $edge[2];
             if (!$this->directed) {
-                $this->nodes[$edge[1]] = [$edge[0] => $edge[2]];
+                $this->nodes[$edge[1]][$edge[0]] = $edge[2];
             }
         }
     }
@@ -46,7 +46,7 @@ class Graph
         if ($strategy != 'dijkstra') {
             throw new \InvalidArgumentException("Unsupported strategy: " . $strategy);
         }
-        $spStrategy = new Strategy\DijkstraStrategy();
+        $spStrategy = new Strategy\Dijkstra\DijkstraStrategy();
         $spStrategy->setNodes($this->nodes);
         return $spStrategy->calculate($start, $finish);
     }
