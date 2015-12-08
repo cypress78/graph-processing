@@ -1,6 +1,6 @@
 {
   "name": "cypress78/graph-processing",
-  "description": "description_text",
+  "description": "A PHP Implementation of the most useful graph algorithms",
   "keywords": ["graph", "Dijkstra", "shortest path"],
   "homepage": "https://github.com/cypress78/graph-processing",
   "type": "library",
@@ -15,9 +15,12 @@
     "php": ">=5.4.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.5"
+    "phpunit/phpunit": "~4.8"
   },
   "autoload": {
     "psr-4": {"GraphProcessing\\": "src/GraphProcessing"}
+  },
+  "autoload-dev": {
+    "psr-4": {"GraphProcessing\\Tests\\": "tests/GraphProcessing"}
   }
 }
